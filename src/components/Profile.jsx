@@ -1,8 +1,10 @@
+import s from './Profile.module.css';
+
 const Profile = () => {
 	return (
-		<div className="content">
+		<div className={s.content}>
 			<div>
-				<img className="content__header-image" src="https://luatkhoa.org/wp-content/uploads/2014/10/blue-header-foocamp21.png" alt="Hero" />
+				<img className={s.content__image} src="https://luatkhoa.org/wp-content/uploads/2014/10/blue-header-foocamp21.png" alt="Hero" />
 			</div>
 			<div>
 				Ava + description
@@ -10,8 +12,10 @@ const Profile = () => {
 			<div>
 				My posts
 				<div>New post</div>
-				<div>post 1</div>
-				<div>post 2</div>
+				<div className={s.posts}>
+					<div className={s.item}>post 1</div>
+					<div className={s.item}>post 2</div>
+				</div>
 			</div>
 		</div>
 	);
